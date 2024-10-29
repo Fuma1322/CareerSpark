@@ -28,7 +28,3 @@ Learn How To Make A Complete LMS Website Using HTML, CSS and JavaScript. If you 
 - Contact Page
 
 Here you will find all the images I'm using to create this responsive lms website. In future, image folder can update.
-
-Get the full source code from [here1](https://www.buymeacoffee.com/tech2etc/e/42638).
-
-Get the full source code from [here2](https://ko-fi.com/s/9c53d5b08b).
