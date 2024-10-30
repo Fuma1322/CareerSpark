@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CareerSpark</title>
+
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
 
         <link rel="stylesheet" href="style.css">
@@ -26,7 +27,7 @@
                     <i id="menu-close" class="fas fa-times"></i>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a class="active" href="institutions.html">Institutions</a></li>
+                    <li><a href="institutions.html">Institutions</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <div class="auth-buttons">
@@ -37,65 +38,26 @@
             </div>
         </nav
 
-        <!-- Home -->
+        <!-- login -->
 
-        <section id="about-home">
-            <h2>Institutions</h2>
-        </section>
-
-        <!-- Institutions -->
-
-        <section id="course">
-            <h1>Discover  Institutions</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <div class="course-box">
-                <div onclick="window.location.href='limkos.html';" class="courses">
-                    <img src="/images/c1.jpg" alt="courses">
-                    <div class="details">
-                        <span>Launched In August, 2008</span>
-                        <h6>Limkokwing University Of Creative Technology</h6>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <span>(239)</span>
-                        </div>
-                    </div>
-                </div>
-                <div onclick="window.location.href='null.html';" class="courses">
-                    <img src="/images/c2.jpg" alt="courses">
-                    <div class="details">
-                        <span>Established In April, 1945</span>
-                        <h6>National Univerity Of Lesotho</h6>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <span>(500)</span>
-                        </div>
-                    </div>
-                </div> 
-                <div onclick="window.location.href='botho.html';" class="courses">
-                    <img src="/images/c3.jpg" alt="courses">
-                    <div class="details">
-                        <span>Launched in 2015 </span>
-                        <h6>Botho University Lesotho</h6>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <span>(120)</span>
-                        </div>
-                    </div>
-                </div>  
-            </div>
-        </section>
+        <section class="wrapper">
+            <div class="title"><span class="log">Login Form</span></div>
+            <form action="#">
+              <div class="row">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Email or Phone" required />
+              </div>
+              <div class="row">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Password" required />
+              </div>
+              <div class="pass"><a href="#">Forgot password?</a></div>
+              <div class="row button">
+                <input type="submit" value="Login" />
+              </div>
+              <div class="signup-link">Not a member? <a href="#">Register now</a></div>
+            </form>
+          </section>          
 
         <!-- footer -->
 
@@ -145,9 +107,9 @@
 
         <script>
 
-        // Navaigation Bar
+            // Navaigation Bar
 
-        $('#menu-btn').click(function(){
+            $('#menu-btn').click(function(){
                $('nav .navigation ul').addClass('active') 
             });
 
