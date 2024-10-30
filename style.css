@@ -80,12 +80,9 @@ nav .navigation ul li a {
   transition: 0.3s ease;
  }
 
+ nav .navigation ul li a:hover,
  nav .navigation ul li a:active {
-  color: #FDC93B;
- }
- 
- nav .navigation ul li a:hover {
-  color: #FDC93B;
+  color: #D73953;
  }
 
 /* Home */
@@ -131,12 +128,12 @@ nav .navigation ul li a {
 
 #home a.blue {
   color: #fff;
-  background: rgb(21, 21, 100);
+  background: #D73953;
   transition: 0.3s ease;
 }
 
 #home a.blue:hover {
-  color: rgb(21, 21, 100);
+  color: #D73953;
   background: #fff;
 }
 
@@ -173,7 +170,7 @@ nav .navigation ul li a {
 
 #features .fea-box i {
   font-size: 2.3rem;
-  color: rgb(44, 44, 80);
+  color: #D73953;
 }
 
 #features .fea-box h3 {
@@ -344,14 +341,16 @@ nav .navigation ul li a {
 
 .pro-links i {
   padding: 10px 13px;
-  border: 1px solid rgb(21, 21, 100);
+  border: 1px solid #D73953;
   cursor: pointer;
+  border-radius: 5px;
+  color: #0c141d;
 }
 
 .pro-links i:hover {
-  background: rgb(21, 21, 100);
+  background: #D73953;
   color: #fff;
-  border: 1px solid rgb(21, 21, 100);
+  border: 1px solid #D73953;
   cursor: pointer;
 }
 
@@ -680,6 +679,128 @@ nav .navigation ul li a {
 
 /* contact */
 
+#contact {
+  padding: 8vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#contact .getin {
+  width: 350px;
+}
+
+#contact .getin h2 {
+  color: #2c234d;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 0.8;
+  margin-bottom: 16px;
+}
+
+#contact .getin p {
+  color: #686875;
+  line-height: 24px;
+  margin-bottom: 33px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e5e4ed;
+}
+
+#contact .getin h3 {
+  color: #2c234d;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+
+#contact .getin .getin-details div {
+  display: flex;
+}
+
+#contact .getin .getin-details div .get {
+  font-size: 16px;
+  line-height: 22px;
+  color: #D73953;
+  margin-right: 20px;
+}
+
+#contact .getin .getin-details div p {
+  font-size: 14px;
+  border-bottom: none;
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+
+#contact .getin .getin-details .pro-links i {
+  margin-right: 8px;
+}
+
+#contact .form {
+  width: 60%;
+  background: #f7f6fa;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+#contact .form h4 {
+  font-size: 24px;
+  color: #2c234d;
+  line-height: 30px;
+  margin-bottom: 8px;
+}
+
+#contact .form p {
+  color: #686875;
+  line-height: 24px;
+  padding-bottom: 25px;
+}
+
+#contact .form .form-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#contact .form .form-row input {
+  width: 48%;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 11px;
+  border: none;
+  background: #fff;
+  color: #7e7c87;
+  outline: none;
+  padding: 20px 30px;
+  margin-bottom: 20px;
+}
+
+#contact .form .form-col textarea,
+#contact .form .form-col input {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 11px;
+  border: none;
+  background: #fff;
+  color: #7e7c87;
+  outline: none;
+  padding: 20px 30px;
+  margin-bottom: 20px;
+}
+
+#contact .form button {
+  font-size: 0.9rem;
+  padding: 13px 25px;
+  background: #D73953;
+  border-radius: 7px;
+  outline: none;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
+}
+
 /* responsive */
 
 @media (max-width: 769px) {
@@ -778,6 +899,39 @@ nav .navigation ul li a {
     width: 50px;
     height: auto;
   }
+
+  /* inner */
+
+  #course-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8vw 4vw;
+  }
+
+  #course-inner .overview {
+    width: 100%;
+  }
+
+  #course-inner .overview .course-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #course-inner .enroll {
+    margin-top: 25px;
+  }
+
+  /* contact */
+
+  #contact {
+    padding: 8vw 4vw;
+  }
+
+  #contact .getin {
+    width: 250px;
+  }
 }
 
 @media (max-width: 475px) {
@@ -825,5 +979,47 @@ nav .navigation ul li a {
     width: 60px;
     margin: 10px 15px ;
     height: auto;
+  }
+
+  #course-inner .overview .course-head .c-name {
+    width: 50%;
+  }
+
+  #course-inner .overview .course-head .c-name h2 {
+    font-size: 22px;
+  }
+
+  #course-inner .enroll {
+    width: 100%;
+  }
+
+  /* contact */
+
+  #contact {
+    padding: 8vw 4vw;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: flex-start;
+  }
+
+  #contact .getin {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  #contact .form {
+    width: 100%;
+    padding: 40px 30px;
+  }
+
+  #contact .form .form-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  #contact .form .form-row input {
+    width: 100%;
   }
 }
